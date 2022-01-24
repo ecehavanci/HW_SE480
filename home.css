@@ -1,0 +1,82 @@
+.general{
+    background-color: azure;
+    font-size: medium;
+    overflow-y: scroll;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    border: 3px solid black;
+    position:sticky;
+    height: 10%;
+    padding:5px ;
+}
+li a{
+    display:inline;
+    color: blanchedalmond;
+    padding: 10px 20px ;
+    text-decoration: none;
+    border: 3px black;
+    border-right: none;
+}
+li a:hover{
+    background-color: darkcyan;
+}
+a.active{
+    background-color: rgb(10, 83, 83);
+    color: blanchedalmond;
+}
+li a:hover:not(.active){
+    background-color: rgb(80, 200, 255);
+} 
+
+div{
+    background-color: rgb(73, 73, 73);
+    align-content: center;
+    border: black;
+    color:rgb(216, 210, 199);
+    border-radius: 15px;
+    font-size: 15px;
+    margin: 15px;
+    padding: 8px;
+}
+.flexBox{
+    background-color: rgb(2, 167, 167);
+    padding: 8px 50px 8px 50px; 
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#htmlInfo{
+    background-color: rgba(54, 112, 112, 0.863);
+}
+#htmlInfo pre{
+    margin-left: 10px; 
+    display: flex;
+    float: left;
+}
+#htmlInfo img{
+    border-radius: 10px;
+}
+#cssInfo{
+    background-color: rgb(253, 158, 142);
+    color: rgb(49, 49, 49);
+    height:250px;
+}
+
+#cssInfo img{
+    float: right;
+    margin-right: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+#cssInfo pre{
+    margin-left: 10px; 
+    float: left;
+    color: rgb(49, 49, 49);
+}

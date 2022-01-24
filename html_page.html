@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNY HTML</title>
+    <link rel="stylesheet" href="html_page.css">
+</head>
+
+<body id="general">
+    <ul class="navigation">
+        <li>
+            <a href="home.html">Home</a>
+            <a href="html_page.html" class="active">HTML</a>
+            <a href="css_page.html">CSS </a>
+            <a href="#">About Me</a>
+        </li>
+    </ul>
+
+    <div>
+        <h2 id="basics">HTML Basics</h2>
+        <div class="tagPart">
+
+            <code> <pre> 
+    &lt;!DOCTYPE html&gt;   
+    &lt;html&gt;    
+    &lt;head&gt;  &lt;title&gt;Title&lt;/title&gt;   &lt;/head&gt;  
+    &lt;body&gt;    
+    &lt;h1&gt;This is a Header&lt;/h1&gt;
+    &lt;p&gt;This is a Paragraph&lt;/title&gt;
+    &lt;/body&gt;   
+    &lt;/html&gt;   
+
+    &lt;!-- This is a comment --&gt; 
+                    </pre>
+            </code>
+
+            <div style="padding: 20px;">
+                <p class="explaination">
+                    <!-- TAG NAME FOR CSS IS NOT DEFİNED BUT p.explaination h4 İS AVAILABLE-->
+                <h4 class="tagName">&lt;!DOCTYPE&gt;  </h4>
+                Defines the document type & It must only appear once at the top of the page
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4 class="tagName">&lt;html&gt;  </h4>
+                Defines the document type & It must only appear once at the top of the page
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4 class="tagName">&lt;head&gt;  </h4>
+                Contains meta information about the HTML page
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4 class="tagName">&lt;body&gt;  </h4>
+                Defines the document's body, and is a container for all the visible contents, such as headings,
+                paragraphs, images, hyperlinks, tables, lists, etc.
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4>&lt;title&gt;  </h4>
+                Defines a title for the document (which is shown in the browser's title bar or in the page's tab)
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4>&lt;!-- ... --&gt;  </h4>
+                Defines a comment
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4>&lt;p&gt;  </h4>
+                Defines a comment
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4>&lt;h1&gt; to  &lt;h1&gt;</h4>
+                Defines HTML headings, h1 defines the most important heading h6 defines the least important one, size
+                and weight changing acording to h(number)
+                </p>
+
+                <p class="explaination">
+                    <!-- TAG NAME FOR CSS IS NOT DEFİNED BUT p.explaination h4 İS AVAILABLE-->
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div>
+        <h2 id="others">Other HTML Elements</h2>
+        <div class="tagPart">
+            <div style="padding: 20px;margin-bottom: 100px;">
+                <!-- TAG NAME FOR CSS IS NOT DEFİNED BUT p.explaination h4 İS AVAILABLE-->
+                <h4 class="tagName">&lt;pre&gt;  </h4>
+                Defines preformatted text, it preserves both spaces and line breaks:
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4 class="tagName">&lt;br&gt;  (Break)</h4>
+                Defines a line break(a new line).
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4 class="tagName">&lt;hr&gt;  (Horizontal Rules)</h4>
+                Defines a thematic change in the content. It is line along x-axis
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4 class="tagName">&lt;a&gt; (link)</h4>
+                Defines a hyperlink, which is used to link from one page to another.
+                <ul>
+                    <li>
+                        <code>
+                                   &lt;a&gt; href="site.com" target="_blank">Click to visit the site&lt;/a&gt;
+                               </code>
+                    </li>
+                    <li>
+                        <ul>
+                            <li>An unvisited link is underlined and blue</li>
+                            <li>A visited link is underlined and purple</li>
+                            <li>An active link is underlined and red</li>
+                        </ul>
+                    </li>
+                    <li>target Attiributes:</li>
+                    <p>__self - Default. Opens the document in the same window/tab as it was clicked
+                        _blank - Opens the document in a new window or tab <br>
+                        _parent - Opens the document in the parent frame <br>
+                        _top - Opens the document in the full body of the window <br>
+                    </p>
+                    <li>We can also use link to create a link that opens the user's email program <br> <code>
+                               &lt;a&gt; href="mailto:someone@mail.com" target="_blank">Click to send mail&lt;/a&gt;
+                           </code></li>
+                    <li>
+                        Link to another section on the same page <br>
+                        <code>&lt;a&gt; href="#section">Go to Section 2&lt;/a&gt;</code>
+
+                    </li>
+
+                </ul>
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4>&lt;img&gt;  </h4>
+                Defines image from link or from source
+                </p>
+                <ul>
+                    <li><code>
+                               &lt;img src="img.jpg" alt="if the image for some reason cannot be displayed" width="500" height="600" >
+                           </code></li>
+                    <li>Also we can use Maps if we want to add clickable areas on image
+
+                        <pre><code>
+            &lt;img src="img.jpg" alt="can't load" usemap="#workmap" >   
+                &lt;map name="workmap"> 
+                    &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"> 
+                    &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html"&gt; 
+                    &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html"&gt; 
+                &lt;/map></code>                                                                             
+                       </pre>
+                    </li>
+
+                </ul>
+                <hr>
+
+                <p class="explaination">
+                <h4 class="tagName">
+                    &lt;picture&gt;</h4>
+                Defines a container for multiple image resources, mostly using for different images for different
+                browser windows size. You can see by trying.
+
+                <pre><code style="width: max-content;">
+                    &lt;picture>
+                            &lt;source media="(min-width:650px)" srcset="img_pink_flowers.jpg"&gt; 
+                            &lt;source media="(min-width:465px)" srcset="img_white_flower.jpg"&gt; 
+                            &lt;img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt; 
+                    &lt;/picture></code> <!-- resimleri değiştir ve gerçek kodunu yana koy--></pre>
+                </p>
+                <hr>
+
+                <p class="explaination">
+                <h4>&lt;Table&gt;  </h4>
+                Defines a table.
+                <div style="display:flex; justify-content: space-evenly;">
+                    <div>
+                        <li>Table cell shown by <h4>&lt;td></h4>
+                        </li>
+                        <li>Table row shown by <h4>&lt;tr></h4>
+                        </li>
+                        <li>Table header shown by <h4>&lt;th></h4>
+                        </li>
+                        <li>To make a cell span over multiple COLUMNS: &lt;colspan></li>
+                        <li>To make a cell span over multiple ROWS: &lt;rowspan></li>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>th1</th>
+                                <th>th2</th>
+                                <th>th3</th>
+                            </tr>
+                            <tr>
+                                <td>tr in td</td>
+                                <td>tr in td</td>
+                                <td>tr in td</td>
+                            </tr>
+                            <tr>
+                                <td>tr in td</td>
+                                <td>tr in td</td>
+                                <td>tr in td</td>
+                            </tr>
+                            <tr>
+                                <td>tr in td</td>
+                                <td>tr in td</td>
+                                <td rowspan="2">rowspan="2"</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">colspan ="2"</td>
+                            </tr>
+                        </table>
+                        <!-- show the code-->
+
+                    </div>
+
+                </div>
+                <hr>
+                </p>
+
+                <p class="explaination">
+                <h4>&lt;Lists&gt;  </h4>
+                HTML have ordered <h4 style="display: inline;">&lt;ol&gt;</h4> & unordered <h4 style="display: inline;">
+                    &lt;ul&gt;</h4> & description <h4 style="display: inline;">&lt;dt&gt;</h4>lists.
+                Except description list we have to use <h4 style="display: inline;">&lt;li&gt;</h4> to show it is list
+                item.
+                <ul>
+                    <li>unordered item</li>
+                    <li>unordered item</li>
+                </ul>
+                <ol>
+                    <li>ordered item</li>
+                    <li>ordered item</li>
+                </ol>
+                <dt>
+                <dd>description item</dd>
+                <dd>description item</dd>
+                </dt>
+                </p>
+
+                <p class="explaination">
+                <h4>&lt;Forms&gt;  </h4>
+                An HTML form is used to collect user input. The user input is most often sent to a server for
+                processing. All tags start with <h4 style="display:inline;"> &lt;form&gt;</h4> tag. It contains a <h4
+                    style="display:inline;"> &lt;label&gt;</h4> and <h4 style="display:inline;"> &lt;input&gt;</h4> tag
+                within.
+
+                <p>
+                    <code> &lt;label&gt;</code> tag contains <code style="color: brown;">for</code> attribute which
+                    connect it to <code> &lt;input&gt;</code> tag's <code style="color: brown;">id</code> attribute.
+                    <br>
+
+                </p>
+
+                <div style="display: flex;padding-top: 10px;">
+                    <div style="flex:1;border: violet;text-align: center;">
+                        This is a text <span>input</span> field, with a label <br>
+                        <form>
+                            <fieldset>
+                                <legend>Label with a text input type</legend>
+                                <label for="fname">Label</label><br>
+                                <input type="text" id="fname" name="fname" value="value attribute"><br>
+                            </fieldset>
+
+                        </form>
+
+                    </div>
+                    <hr>
+                    <div style="flex:1;text-align: center;">
+                        This is a <span>radio</span> typed button, you can only choose one of them.
+
+                        <form>
+                            <fieldset>
+                                <legend>Lebel with a radio input type</legend> 
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                  <label for="html">HTML</label><br>
+                                  <input type="radio" id="css" name="fav_language" value="CSS">
+                                  <label for="css">CSS</label><br>
+                                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                  <label for="javascript">JavaScript</label>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                    <hr>
+                    <div style="flex:1;text-align: center;">
+                        These are <span>checkbox</span>'s(for selecting zero or more of many choices)
+                        <form action="/action_page.php">
+                            <fieldset>
+                                <legend>Lebel with checkbox input type</legend>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> I have a bike</label><br>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2"> I have a car</label><br>
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                <label for="vehicle3"> I have a boat</label><br><br>
+                                <input type="submit" value="Submit">
+                            </fieldset>
+
+                        </form>
+                    </div>
+                    <hr>
+                    <div style="flex:1;text-align: center;">
+                        This one is <span>submit</span> button <br>
+                        <input type="submit" value="Submit">
+                    </div>
+                    <hr>
+                    <div style="flex:1;text-align: center;">
+                        This one is just a <span>button</span> <br>
+                        <input type="button" value="Empty button">
+                    </div>
+                </div>
+                <p>Some other input types: color, date, datetime-local, email, file, hidden, image, month, number, password, reset, time, url, week..</p>
+                </p>
+
+                <div style="justify-content: space-evenly; display: inline;">
+
+                </div>
+
+            </div>
+        </div>
+</body>
+
+<footer id="footerContainer">
+    <h3 class="tagContainers"><a href="#basics">Basics</a> </h3>
+    <h3 class="tagContainers"><a href="#others">Other Elements</a> </h3>
+    <h3 class="tagContainers">Lists</h3>
+    <h3 class="tagContainers">Table</h3>
+    <h3 class="tagContainers">Image</h3>
+    <h3 class="tagContainers">Link</h3>
+    <h3 class="tagContainers">Picture</h3>
+    <h3 class="tagContainers">Form</h3>
+
+</footer>
+
+</html>

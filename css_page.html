@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learny CSS</title>
+    <link rel="stylesheet" href="css_page.css">
+</head>
+
+<body id="general">
+    <ul class="navigation">
+        <li>
+            <a href="home.html">Home</a>
+            <a href="html_page.html">HTML</a>
+            <a href="css_page.html" class="active">CSS </a>
+            <a href="#">About Me</a>
+        </li>
+    </ul>
+
+    <div>
+        <h2 id="basics">CSS Basics</h2>
+        <div class="tagPart">
+            <img src="css.png.gif" alt="css basics" width="400vw" style="margin:10px;">
+            <p class="explaination">
+                A selector follows by some declarations.
+                A selector can be:
+            <div style="display: inline-block;">
+                <ul style="align-content: space-around;">
+                    <li>ID
+                        <code>
+                            #idName{}
+                        </code>
+
+                    </li>
+                    <li>Class (Shown by .className)
+                        <code>.className{}</code>
+                    </li>
+                    <li> Universal
+                        <code>*{}</code>
+                    </li>
+                    <li>Grouping
+                        <code>p, h2{}</code>
+                    </li>
+                </ul>
+            </div>
+            </p>
+        </div>
+
+        <div class="tagPart">
+            <p class="explaination">
+            <h4
+                style="padding-left: 18px;color: tomato;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                How to add CSS?</h4>
+            <div>
+                <ul>
+                    <li>External CSS
+                        <p>With an external style sheet, you can change the look of an entire website by changing just
+                            one
+                            file!The external .css file should not contain any HTML tags.
+                        </p>
+                        <code class="insert">
+                        <pre>
+                        &lt;head>
+                        &lt;link rel="stylesheet" href="mystyle.css">
+                        &lt;/head></pre>
+                        
+                    </code>
+                    </li>
+                    <li>Internal CSS
+                        <p>An internal style sheet may be used if one single HTML page has a unique style.
+                            Internal styles are defined within the &lt;style> element, inside the &lt;head> section of
+                            an
+                            HTML page
+                        </p>
+                        <code class="insert">
+                        <pre style="background-color: white;">
+                        &lt;head>
+                        &lt;style>
+                            /* some css code*/
+                        &lt;/style>
+                        &lt;/head></pre>
+                    </code>
+                    </li>
+                    <li>Inline CSS
+                        <p>An inline style may be used to apply a unique style for a single element.</p>
+                        <code class="insert">
+                        <pre>
+                            &lt;h1 style="color:blue;text-align:center;">This is a heading &lt;/h1>
+                            &lt;p style="color:red;">This is a paragraph. &lt;/p>
+                        </pre>
+        
+                    </code>
+                    </li>
+                </ul>
+            </div>
+
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h2 id="backgrounds">Backgrounds</h2>
+        <div class="tagPart" style="align-content:space-around;display: flex;">
+            <p class="explaination">
+                A background can be with color:
+                <code class="insert"><pre> div{ background-color: purple; }</pre></code>
+            <div class="showBox" style="background-color: purple;"></div>
+            </p>
+            <hr>
+            <p class="explaination">
+                A background can be with image:
+                <code class="insert"><pre>div{ background-image: url("css.png"); }</pre>
+                    </code>
+            <div class="showBox" style="background-image: url('css3.png');"></div>
+            </p>
+            <!--<p class="explaination">
+                    <code class="insert">
+                        <pre>
+                            div{
+                                background-repeat: repeat-x;
+                                /* repeat-y & no-repeat*/
+                            }
+                        </pre>
+                    </code>
+                <div style="background-image: url('css3.png'); background-repeat: repeat-x; width: 200px;"></div>
+                </p> -->
+
+        </div>
+        <h2>Border</h2>
+        <div class="tagPart">
+            <p>Border element can have border-style,border-radius, border-width, border-color </p>
+            <p>To shorten the code we can use border-width,border-style,border-color together</p>
+            <ul>
+                <li>
+                    <ul>
+                        <li><code class="insert">
+                                <pre>
+                border-style: dotted;
+                border-width: 5px;
+                border-color: red;
+                border-right-style: solid;
+                border-left-style: solid;
+                                </pre>
+                            </code></li>
+                    </ul>
+                </li>
+                <li>
+                    <code class="insert">p {
+                        border: 5px solid red;
+                      }</code>
+                </li>
+            </ul>
+        </div>
+        <h2>Margin & Padding</h2>
+        <div class="tagPart" style="align-content: stretch;justify-content: space-evenly;">
+            <img src="https://miro.medium.com/max/1018/1*WJ82bHSmG7s18u4SBI8EqA.png" alt="All contents"
+                style="width: 350px;">
+            <div>
+                <h4 style="color: tomato;
+                font: 600;
+                font-family: fantasy;">Margin</h4>
+                <p>Margins are used to create space around elements, outside of any defined borders.
+                    <code class="showBox">margin:auto;</code>
+                    Horizontally centers the element within its container.
+                </p>
+                <h4 style="color: tomato;
+                font: 600;
+                font-family: fantasy;"> Padding</h4>
+                <p>Padding is used to create space around an element's content, inside of any defined borders.
+                </p>
+            </div>
+        </div>
+
+        <h2>Height & Width</h2>
+        <div class="tagPart">
+            <p style="flex: 1;">The height and width properties are used to set the height and width of an element.
+                The height and width properties do not include padding, borders, or margins.
+                The height and width properties may have the following values:
+            <ul style="flex:1.25;">
+
+                <li><span>auto </span>This is default. The browser calculates the height and width </li>
+                <li><span>length </span>Defines the height/width in px, cm etc.</li>
+                <li><span>% </span> Defines the height/width in percent of the containing block</li>
+                <li><span>initial</span> Sets the height/width to its default valu</li>
+                <li><span>inherit </span>he height/width will be inherited from its parent value</li>
+            </ul>
+            </p>
+
+        </div>
+
+        <h2 id="text">Text</h2>
+        <div class="tagPart">
+            <ul>
+                <p>Aligns the text inside the area</p>
+                <li class="insert" style="padding-left: 20px;">text-align: center; (left,right,justify)</li>
+                <p>Direction of the text</p>
+                <li class="insert" style="padding-left: 20px;">direction: rtl; (ltr)</li>
+                <p>Decoration of the text</p>
+                <li class="insert" style="padding-left: 20px;">text-decoration: underline;</li>
+                <p>Decoration color of the text</p>
+                <li class="insert" style="padding-left: 20px;">text-decoration-color: red;</li>
+                <p>Decorates the line for the text</p>
+                <li class="insert" style="padding-left: 20px;">text-decoration-line: underline; (overline,line-through,overline underline)</li>
+                <p>Style of the decoration</p>
+                <li class="insert" style="padding-left: 20px;">text-decoration-style:solid; (wavy,double)</li>
+                <p>To capitalize etc. the text</p>
+                <li class="insert" style="padding-left: 20px;">text-transform: uppercase; (lowercase,capitalize)</li>
+            </ul>
+        </div>
+
+        <h2>Font</h2>
+        <div class="tagPart">
+            <ul>
+                <li>font-family </li>
+                <li>Font Style:normal; (italic,oblique) </li>
+                <li>Font Size:8vw </li>
+            </ul>
+        </div>
+
+        <h2 id="link">Links</h2>
+        <div class="tagPart">
+            <p>Links can be styled differently depending on what state they are in</p>
+            <ul style="list-style-type: none;pad: 50px;" class="insert">
+                <li><span>a:link </span> a normal, unvisited link</li>
+                <li><span>a:visited  </span> a link the user has visited</li>
+                <li><span>a:hover  </span> a link when the user mouses over it
+                </li>
+                <li><span>a:active   </span> a link the moment it is clicked
+
+                </li>
+            </ul>
+            <div>
+                <p>You can try it here!</p>
+                <a href="https://github.com/ecehavanci" target="BLANK">TRY!</a>
+            </div>
+
+        </div>
+
+        <h2>Display</h2>
+        <div class="tagPart">
+            <!--
+                <code>display:inline;</code>
+            <div style="display: inline;">
+            <p>What</p>
+            <p style="background-color: cadetblue;">is going to</p>
+            <p>display?</p>
+            </div>
+            -->
+            <ul style="list-style-type: none;">
+                <li><span>block </span> The element generates a block element box, generating line breaks both before
+                    and after the element when in the normal flow.</li>
+                <li><span>inline  </span> The element generates one or more inline element boxes that do not generate
+                    line breaks before or after themselves. In normal flow, the next element will be on the same line if
+                    there is space</li>
+                <li><span>inline-block </span> The element generates a block element box that will be flowed with
+                    surrounding content as if it were a single inline box (behaving much like a replaced element would).
+                </li>
+            </ul>
+            <!-- add image to show all-->
+        </div>
+        <h2>Position</h2>
+        <div class="tagPart">
+            <table>
+                <tr>
+                    <td>static</td>
+                    <td>Default value. Elements render in order, as they appear in the document flow</td>
+                </tr>
+                <tr>
+                    <td>absolute</td>
+                    <td>The element is positioned relative to its first positioned (not static) ancestor element</td>
+                </tr>
+                <tr>
+                    <td>fixed</td>
+                    <td>The element is positioned relative to the browser window</td>
+                </tr>
+                <tr>
+                    <td>relative</td>
+                    <td> The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the
+                        element's LEFT position</td>
+                </tr>
+                <tr>
+                    <td>
+                        sticky
+                    </td>
+                    <td> The element is positioned based on the user's scroll position</td>
+                </tr>
+                <tr>
+                    <td>initial</td>
+                    <td> Sets this property to its default value.</td>
+                </tr>
+                <tr>
+                    <td>inherit</td>
+                    <td> Inherits this property from its parent element.</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div style="height: 150px;"></div>
+    </div>
+</body>
+
+<footer id="footerContainer">
+    <h3 class="tagContainers"><a href="#basics">CSS Basics</a></h3>
+    <h3 class="tagContainers">Class & ID</h3>
+    <h3 class="tagContainers">How To Add CSS</h3>
+    <h3 class="tagContainers"><a href="#backgrounds">Backgrounds</a></h3>
+    <h3 class="tagContainers">Border</h3>
+    <h3 class="tagContainers">Margin & Padding</h3>
+    <h3 class="tagContainers">Height and Width</h3>
+    <h3 class="tagContainers"><a href="#text">Text</a> </h3>
+    <h3 class="tagContainers">Font</h3>
+    <h3 class="tagContainers"><a href="#link">Links</a> </h3>
+    <h3 class="tagContainers">Position</h3>
+
+</footer>
+
+</html>

@@ -1,0 +1,139 @@
+#general{
+    background-color: azure;
+    font-size: medium;
+    overflow-y: scroll;
+}
+ul.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    border: 3px solid black;
+    position:sticky;
+    height: 10%;
+    padding:5px ;
+}
+ul.navigation li a{
+    display:inline;
+    color: blanchedalmond;
+    padding: 10px 20px ;
+    text-decoration: none;
+    border: 3px black;
+    border-right: none;
+}
+ul.navigation li a:hover{
+    background-color: darkcyan;
+}
+ul.navigation a.active{
+    background-color: rgb(10, 83, 83);
+    color: blanchedalmond;
+}
+ul.navigation li a:hover:not(.active){
+    background-color: rgb(80, 200, 255);
+} 
+
+#footerContainer{
+    background-color: rgb(189, 189, 189);
+    align-items: center;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-x: scroll;
+
+}
+.tagContainers{
+    background-color: rgb(255, 211, 183);
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px 10px 15px;
+    width: 12%;
+    padding: 12PX;
+    border-color: rgb(208, 172, 255);
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(112, 40, 40);
+    justify-content: center;
+    align-items: center;
+}
+.tagContainers h3 a:visited,a:hover,a:visited,a:link{
+    text-decoration:none;
+    color: darkred;
+}
+div h2{
+    color: rgb(58, 110, 112);
+    position: relative;
+    margin-left: 12%;
+    font-weight: 800;
+}
+
+.tagPart {
+    justify-content: space-evenly;
+    display: flex;
+    background-color: rgba(255, 139, 139, 0.219);
+}
+
+.explaination{
+    font-size: medium;
+    color: rgb(54, 53, 53);
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    max-width: 40%;
+}
+p.explaination h4{
+    color: rgb(255, 38, 0);
+    font-weight: 700;
+    padding: 15px;
+}
+div{
+    margin: 4px;
+}
+code{
+    background-color: white;
+    margin: 8px;
+    margin-bottom: 0;
+    padding: 3px;
+    width:max-content;
+    width: min-content;
+}
+.insert{
+    background-color: white;
+    color: coral;
+    border: cadetblue;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.insert pre{
+    background-color: white;
+}
+.showBox{
+    width: 50px;
+    height: 50px;
+}
+li span{
+    color: tomato;
+    font: 600;
+    font-family: fantasy;
+    text-decoration: cadetblue;
+}
+
+#showLink a:link {
+    color: darkblue;
+}
+#showLink a:visited {
+    color: darkgreen;
+}
+#showLink a:hover  {
+    color: red;
+}
+#showLink a:active  {
+    color: purple;
+}
+table,tr,td{
+    border:0.5px solid rgb(255, 128, 0);
+    border-style: dotted;
+}
